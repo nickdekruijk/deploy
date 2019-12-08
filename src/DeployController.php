@@ -3,6 +3,7 @@
 namespace NickDeKruijk\Deploy;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Symfony\Component\Process\Process;
 
 class DeployController extends Controller
