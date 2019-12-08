@@ -19,7 +19,7 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"NickDeKruijk\\Minify\\Deploy"
+				"NickDeKruijk\\Deploy\\ServiceProvider"
 			]
 		}
 	}
