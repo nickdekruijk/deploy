@@ -1,0 +1,26 @@
+{
+	"name": "nickdekruijk/deploy",
+	"keywords": ["deploy", "laravel", "php", "webhook", "autodeploy"],
+	"description": "Automaticaly deploy your git projects with webhooks",
+	"license": "MIT",
+	"authors": [{
+		"name": "Nick de Kruijk",
+		"email": "git@nickdekruijk.nl"
+	}],
+	"require": {
+		"php": ">=7.2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"NickDeKruijk\\Deploy\\": "src/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"NickDeKruijk\\Minify\\Deploy"
+			]
+		}
+	}
+}
