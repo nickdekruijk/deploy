@@ -13,7 +13,7 @@ Set `APP_DEPLOY_SECRET` in your `.env` file.
 Also edit `app/Http/Middleware/VerifyCsrfToken.php` to skip Csrf token check on the route by adding it to the $except array
 ```
     protected $except = [
-        [ config('deploy.route') ],
+        [ '/deploy-webhook' ],
     ];
 ```
 
