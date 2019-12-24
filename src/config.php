@@ -36,4 +36,27 @@ return [
 
     'script' => './deploy.sh',
 
+    /*
+    |--------------------------------------------------------------------------
+    | notify_mail
+    |--------------------------------------------------------------------------
+    |
+    | After deployment send a notification to this emailaddress
+    |
+    */
+
+    'notify_mail' => env('APP_DEPLOY_NOTIFY_MAIL'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | notify_success
+    |--------------------------------------------------------------------------
+    |
+    | By default notifications will only be send on deployment failures
+    | To send notification on success too change APP_DEPLOY_NOTIFY_SUCCESS
+    |
+    */
+
+    'notify_success' => env('APP_DEPLOY_NOTIFY_SUCCESS', false),
+
 ];
