@@ -20,8 +20,10 @@ Also edit `app/Http/Middleware/VerifyCsrfToken.php` to skip Csrf token check on 
     ];
 ```
 
+Finaly add a new webhook to github (or your git provider) with the the url https://yourdomain.com/deploy-webhook and the `APP_DEPLOY_SECRET` value.
+
 ## Deploy script
-The controller will execute a shell script that does the actual deployment. By default it calls `deploy.sh` in the laravel projects root folder.
+The controller will execute a shell script that does the actual deployment. By default it calls `deploy.sh` in the laravel projects root folder. You may need to set execute permission.
 For example this could contain:
 ```
 #!/bin/sh
